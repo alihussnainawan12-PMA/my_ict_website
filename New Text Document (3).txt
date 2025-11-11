@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Horse Sports</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>The World of Horses</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="breeds.html">Famous Breeds</a>
+        <a href="sports.html" class="active">Horse Sports</a>
+        <a href="care.html">How to Protect Them</a>
+        <button id="themeToggleBtn">Toggle Theme</button>
+    </nav>
+
+    <main>
+        <section id="games">
+            <h2>Games & Sports Played on Horses</h2>
+            
+            <div class="card">
+                <h3>Equestrian Olympics</h3>
+                <p>There are three main Olympic sports:</p>
+                <ul>
+                    <li><strong>Dressage:</strong> Often called "horse ballet," it tests the training and precision of the horse and rider.</li>
+                    <li><strong>Show Jumping:</strong> A timed test of speed and skill where horses must jump over a series of obstacles.</li>
+                    <li><strong>Eventing:</strong> A 3-part competition with Dressage, Show Jumping, and a cross-country jumping course.</li>
+                </ul>
+                <img src="https://via.placeholder.com/400x250?text=Olympic+Equestrian+Sports" alt="Horses performing in Olympic equestrian sports" class="horse-image">
+            </div>
+
+            <div class="card">
+                <h3>Other Famous Sports</h3>
+                <ul>
+                    <li><strong>Polo:</strong> A team sport played with a mallet and a ball, often called "the sport of kings."</li>
+                    <li><strong>Horse Racing:</strong> A sport where Thoroughbreds race to the finish line at high speed.</li>
+                    <li><strong>Barrel Racing:</strong> A fast-paced rodeo event where a horse and rider gallop in a cloverleaf pattern around barrels.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>My ICT Project Website</p>
+    </footer>
+
+    <a id="backToTopBtn" href="#top" title="Go to top">Top</a>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+// Wait for the whole page to load before running scripts
+document.addEventListener("DOMContentLoaded", function() {
+
+    // --- FEATURE 1: BACK TO TOP BUTTON ---
+    let mybutton = document.getElementById("backToTopBtn");
+
+    // When the user scrolls the window, run the scrollFunction
+    window.onscroll = function() {
+        scrollFunction();
+    };
+
+    // This function shows or hides the button
+    function scrollFunction() {
+        if (mybutton) { // Check if the button exists on this page
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+    }
+    // Note: The smooth scroll is handled by CSS (html { scroll-behavior: smooth; })
+
+
+    // --- FEATURE 2: THEME TOGGLER ---
+    let themeBtn = document.getElementById("themeToggleBtn");
+
+    // Check if the theme toggle button exists
+    if (themeBtn) {
+        // Add a click event listener
+        themeBtn.onclick = function() {
+            // Find the <body> tag
+            let body = document.body;
+            
+            // Toggle the "light-mode" class
+            body.classList.toggle("light-mode");
+            
+            // Optional: Save the user's preference in their browser
+            if (body.classList.contains("light-mode")) {
+                localStorage.setItem("theme", "light");
+            } else {
+                localStorage.setItem("theme", "dark");
+            }
+        };
+    }
+    
+    // Optional: Check if the user had a preference saved from a previous visit
+    let savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "light") {
+        document.body.classList.add("light-mode");
+    }
+
+});

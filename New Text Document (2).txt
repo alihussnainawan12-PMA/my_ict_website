@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Horse Breeds</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>The World of Horses</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="breeds.html" class="active">Famous Breeds</a>
+        <a href="sports.html">Horse Sports</a>
+        <a href="care.html">How to Protect Them</a>
+        <button id="themeToggleBtn">Toggle Theme</button>
+    </nav>
+
+    <main>
+        <section id="breeds">
+            <h2>Famous Horse Breeds</h2>
+            
+            <div class="card">
+                <h3>The Arabian</h3>
+                <p><strong>Characteristics:</strong> Known for its dished face, high tail carriage, and incredible endurance. They are "hot-blooded," meaning they are spirited and intelligent.</p>
+                <p><strong>Max Age:</strong> 25-30 years</p>
+                <img src="https://via.placeholder.com/400x250?text=Arabian+Horse" alt="A beautiful Arabian horse" class="horse-image">
+            </div>
+
+            <div class="card">
+                <h3>The Thoroughbred</h3>
+                <p><strong>Characteristics:</strong> The fastest horse in the world, famous for racing. They are tall, slim, and very athletic.</p>
+                <p><strong>Max Age:</strong> 25-35 years</p>
+                <img src="https://via.placeholder.com/400x250?text=Thoroughbred+Horse" alt="A racing Thoroughbred horse" class="horse-image">
+            </div>
+
+            <div class="card">
+                <h3>The Shire</h3>
+                <p><strong>Characteristics:</strong> A "cold-blooded" draft horse, one of the largest breeds. Known for being gentle giants and very strong, used for pulling.</p>
+                <p><strong>Max Age:</strong> 20-25 years</p>
+                <img src="https://via.placeholder.com/400x250?text=Shire+Horse" alt="A large Shire horse" class="horse-image">
+            </div>
+
+            <div class="card">
+                <h3>The American Quarter Horse</h3>
+                <p><strong>Characteristics:</strong> The most popular breed in the US. Known for its muscular build and ability to sprint short distances (a quarter mile).</p>
+                <p><strong>Max Age:</strong> 25-35 years</p>
+                <img src="https://via.placeholder.com/400x250?text=Quarter+Horse" alt="An American Quarter Horse" class="horse-image">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>My ICT Project Website</p>
+    </footer>
+
+    <a id="backToTopBtn" href="#top" title="Go to top">Top</a>
+
+    <script src="script.js"></script>
+</body>
+</html>

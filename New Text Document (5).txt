@@ -1,0 +1,197 @@
+/* --- GLOBAL STYLES --- */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #8B4513; /* Saddle Brown */
+    color: #F5F5DC; /* Linen */
+    transition: background-color 0.3s, color 0.3s; /* Smooth theme transition */
+}
+
+/* --- LIGHT MODE THEME --- */
+body.light-mode {
+    background-color: #F5F5DC; /* Linen */
+    color: #3D2314; /* Dark brown text */
+}
+
+/* --- HEADER & NAV --- */
+header {
+    background-color: #5A2C0A; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+/* Light mode changes */
+body.light-mode header {
+    background-color: #A0522D;
+    color: #3D2314;
+}
+
+nav {
+    background-color: #3D2314; 
+    padding: 10px;
+    text-align: center;
+    position: sticky; 
+    top: 0;
+    z-index: 100;
+}
+/* Light mode changes */
+body.light-mode nav {
+    background-color: #D2B48C; /* Tan */
+}
+
+nav a {
+    color: #F5F5DC; 
+    padding: 10px 15px;
+    text-decoration: none; 
+    font-weight: bold;
+}
+nav a:hover {
+    background-color: #5A2C0A; 
+}
+/* This highlights the current page */
+nav a.active {
+    background-color: #8B4513;
+    color: white;
+}
+/* Light mode changes */
+body.light-mode nav a {
+    color: #3D2314;
+}
+body.light-mode nav a:hover {
+    background-color: #A0522D;
+}
+body.light-mode nav a.active {
+    background-color: #8B4513;
+    color: white;
+}
+
+
+/* --- THEME TOGGLE BUTTON --- */
+#themeToggleBtn {
+    background-color: #F5F5DC;
+    color: #3D2314;
+    border: 1px solid #3D2314;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 15px;
+}
+#themeToggleBtn:hover {
+    background-color: #fff;
+}
+/* Light mode changes */
+body.light-mode #themeToggleBtn {
+    background-color: #3D2314;
+    color: #F5F5DC;
+    border: 1px solid #F5F5DC;
+}
+
+
+/* --- MAIN CONTENT & CARDS --- */
+main {
+    padding: 20px;
+}
+section {
+    margin-bottom: 20px;
+}
+.card {
+    background-color: #A0522D; 
+    border: 1px solid #7B3F00; 
+    border-radius: 8px; 
+    padding: 16px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+}
+/* Light mode changes */
+body.light-mode .card {
+    background-color: #FFFFFF; /* White */
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #F5DEB3; /* Wheat */
+}
+/* Light mode changes */
+body.light-mode .card h3 {
+    color: #5A2C0A;
+}
+
+/* --- OTHER ELEMENTS --- */
+hr {
+    border: 0;
+    height: 1px;
+    background: #CD853F; 
+    margin: 20px 0;
+}
+/* Light mode changes */
+body.light-mode hr {
+    background: #ccc;
+}
+
+ul {
+    padding-left: 20px;
+}
+/* Fix for links inside cards in light mode */
+body.light-mode .card a {
+    color: #8B4513;
+}
+
+.horse-image {
+    width: 100%; 
+    max-width: 400px; 
+    height: auto; 
+    display: block; 
+    margin: 15px auto; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15); 
+}
+
+/* --- FOOTER --- */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #3D2314;
+    color: #F5F5DC; 
+    margin-top: 20px;
+}
+/* Light mode changes */
+body.light-mode footer {
+    background-color: #D2B48C;
+    color: #3D2314;
+}
+
+/* --- JS BACK TO TOP BUTTON --- */
+#backToTopBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none;
+    background-color: #5A2C0A; 
+    color: white;
+    cursor: pointer; 
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    text-decoration: none; 
+}
+#backToTopBtn:hover {
+    background-color: #3D2314; 
+}
+/* Light mode changes */
+body.light-mode #backToTopBtn {
+    background-color: #A0522D;
+    color: white;
+}
+body.light-mode #backToTopBtn:hover {
+    background-color: #8B4513;
+}

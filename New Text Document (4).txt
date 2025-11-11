@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Horse Care & Protection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>The World of Horses</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="breeds.html">Famous Breeds</a>
+        <a href="sports.html">Horse Sports</a>
+        <a href="care.html" class="active">How to Protect Them</a>
+        <button id="themeToggleBtn">Toggle Theme</button>
+    </nav>
+
+    <main>
+        <section id="care">
+            <h2>How to Protect & Care for Horses</h2>
+            <p>Protection starts with good care. A horse needs five key things to be safe and healthy.</p>
+
+            <div class="card">
+                <h3>1. Proper Food & Water</h3>
+                <p>Horses are grazing animals. They need a constant supply of fresh, clean water and high-quality food, mostly hay or grass (forage).</p>
+            </div>
+
+            <div class="card">
+                <h3>2. Safe Shelter</h3>
+                <p>A horse needs a shelter to escape from hot sun, rain, wind, and insects. This can be a stable or even just a three-sided shed in their field.</p>
+            </div>
+
+            <div class="card">
+                <h3>3. Health & Vet Care</h3>
+                <p>Horses need regular care from a veterinarian for vaccinations and a farrier (hoof specialist) to trim their hooves every 6-8 weeks, like a human cutting their fingernails.</p>
+            </div>
+
+            <div class="card">
+                <h3>4. Exercise & Company</h3>
+                <p>Horses are social herd animals and should not be kept alone. They also need space to move around and exercise every day to stay physically and mentally healthy.</p>
+            </div>
+
+            <div class="card">
+                <h3>5. Breed Conservation</h3>
+                <p>Another way to "protect" horses is to support organizations that work to save endangered breeds. Some breeds, like the Suffolk Punch draft horse, are critically endangered.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>My ICT Project Website</p>
+    </footer>
+
+    <a id="backToTopBtn" href="#top" title="Go to top">Top</a>
+
+    <script src="script.js"></script>
+</body>
+</html>
